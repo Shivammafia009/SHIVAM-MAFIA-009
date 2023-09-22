@@ -36,11 +36,11 @@ async def gifspam(e, smex):
 @X10.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)(.*)" % hl))
 async def spam(event: events):
     if event.sender_id in SUDO_USERS:
-        altron = event.text.split(" ", 2)
+        mafia = event.text.split(" ", 2)
         mk = await event.get_reply_message()
 
         try:
-            if len(altron) == 3:
+            if len(mafia) == 3:
                 message = mafia[2]
                 for _ in range(int(mafia[1])):
                     if event.reply_to_msg_id:
@@ -49,7 +49,7 @@ async def spam(event: events):
                         await event.client.send_message(event.chat_id, message)
                     await asyncio.sleep(0.2)
             elif event.reply_to_msg_id and mk.media:
-                for _ in range(int(altron[1])):
+                for _ in range(int(mafia[1])):
                     mk = await event.client.send_file(event.chat_id, mk, caption=mk.text)
                     await gifspam(event, mk) 
                     await asyncio.sleep(0.2)  
