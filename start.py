@@ -12,7 +12,7 @@ START_BUTTON = [
         Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/MAFIA_FIGHTER_BACK")
     ],
     [
-        Button.url("• ʀᴇᴘᴏ •", "https://github.com/ItZxSTaR/XBOTS")
+        Button.url("• ʀᴇᴘᴏ •", "https://github.com/Shivammafia009")
     ]
 ]
 
@@ -40,7 +40,7 @@ async def start(event):
         TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{__version__}`\n━━━━━━━━━━━━━━━━━"
         await event.client.send_file(
                     event.chat_id,
-                    "https://te.legra.ph/file/07d39b85c6cea32f15259.jpg",
+                    "https://te.legra.ph/file/12eeaad2dd43cffbc3626.jpg",
                     caption=TEXT, 
                     buttons=START_BUTTON
                 )
