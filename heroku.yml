@@ -1,5 +1,5 @@
 build:
   docker:
-    Altron: Dockerfile
+    MAFIA: Dockerfile
 run:
-  Altron: python3 -m main.py
+  MAFIA: python3 -m main.py
