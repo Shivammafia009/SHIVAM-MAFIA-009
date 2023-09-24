@@ -1,1 +1,1 @@
-TheAltron: python -m main.py
+TheMafia: python -m main.py
